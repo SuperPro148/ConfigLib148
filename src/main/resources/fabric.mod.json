@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "configlib148",
+  "version": "${version}",
+  "name": "ConfigLib148",
+  "description": "A crappy config lib I made for personal use. You probably don't want to use it.",
+  "authors": [
+    "SuperPro148"
+  ],
+  "contact": {
+    "homepage": "superpro148.github.io/pages/mcmods",
+    "sources": "https://github.com/SuperPro148/ConfigLib148"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/configlib148/icon.png",
+  "environment": "client",
+  "entrypoints": {
+
+  },
+  "mixins": [
+    "configlib148.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": []
+    }
+  }
+}

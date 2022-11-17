@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "testmod148",
+  "version": "${version}",
+  "name": "test",
+  "description": "A crappy config lib I made for personal use. You probably don't want to use it. [TESTMOD]",
+  "authors": [
+    "SuperPro148"
+  ],
+  "contact": {
+    "homepage": "superpro148.github.io/pages/mcmods",
+    "sources": "https://github.com/SuperPro148/ConfigLib148"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/testmod148/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.superpro148.testmod.TestEntryPoint"
+    ],
+    "modmenu": [
+      "io.github.superpro148.testmod.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": []
+    }
+  }
+}
