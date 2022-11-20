@@ -8,12 +8,13 @@
     "SuperPro148"
   ],
   "contact": {
-    "homepage": "superpro148.github.io/pages/mcmods",
-    "sources": "https://github.com/SuperPro148/ConfigLib148"
+    "homepage": "https://superpro148.github.io/pages/mcmods",
+    "sources": "https://github.com/SuperPro148/ConfigLib148",
+    "issues": "https://github.com/superPro148/configLib148/issues"
   },
-  "license": "GPL-3.0",
+  "license": "LGPL-3.0-only",
   "icon": "assets/configlib148/icon.png",
-  "environment": "client",
+  "environment": "*",
   "entrypoints": {
 
   },
