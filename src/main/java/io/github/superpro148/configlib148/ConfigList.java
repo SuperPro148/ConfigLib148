@@ -46,6 +46,9 @@ public class ConfigList {
                 if (option.getClassType() == Double.class) {
                     configJson.addProperty(option.getKey(), (double) option.getValue());
                 }
+                if (option.getClassType() == String.class) {
+                    configJson.addProperty(option.getKey(), option.getValue().toString());
+                }
                 if (option.getClassType().isEnum()) {
                     configJson.addProperty(option.getKey(), option.getValue().toString());
                 }
@@ -78,6 +81,9 @@ public class ConfigList {
                         }
                         if (option.getClassType() == Double.class) {
                             option.setValue(configJson.get(key).getAsDouble());
+                        }
+                        if (option.getClassType() == String.class) {
+                            option.setValue(configJson.get(key).getAsString());
                         }
                         if (option.getClassType().isEnum()) {
                             option.setValue(Enum.valueOf(option.getClassType(), configJson.get(key).getAsString()));
